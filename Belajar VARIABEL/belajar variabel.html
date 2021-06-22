@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Belajar Variabel dalam Javascript</title>
+    <script>
+        // membuat variabel
+        var name = "Petani Kode"; // string
+        var visitorCount = 503.22; // float
+        let isActive = true; // bolean
+        const url = "https://www.petanikode.com"; // string
+        let Umur = 18; // integer
+        let merk = ['honda', 'suzuki', 'toyota'] // array (index & value)
+        let details = {type: "motor", cc: 1200} // object (key & value)
+
+        // menampilkan variabel ke jendela dialog (alert)
+        alert("Selamat datang di " + name);
+
+        // menampikan variabel ke dalam HTML
+        document.write("Nama Situs: " + name + "<br>");
+        document.write("Jumlah Pengunjung: " + visitorCount + "<br>");
+        document.write("Status Aktif: " + isActive + "<br>");
+        document.write("Alamat URL: " + url + "<br>");
+        document.write("Umur: " + Umur + "<br>");
+
+    </script>
+</head>
+
+<body>
+    <script>
+        var namaPengembang = "Magic 24k";
+        document.write("Nama Pengembang" + namaPengembang + "<br>")
+        var stasus = "jomblo ngenes";
+        document.write("Status Hub" + stasus + "<br>");
+        var nomorKTP = 320153201532015;
+        document.write("Nomor KTP" + nomorKTP + "<br>");
+        var product = ["Moba", "PUBG", "Freefire", "GrandTheftAuto"]
+        document.write(product[0] + "<br>");
+        document.write(product[3] + "<br>");
+        document.write(product[2] + "<br>");
+        document.write(product[1] + "<br>");
+        const hitam = '100'
+        var detail = qwarna pintu : merah", "warna kaca : hitam", "warna knalpot : silver", "warna velg : gray", "warna bemper : merah"]
+        let mobil = {
+            type: "Fiat",
+            model: "500",
+            color: {
+                pintu: "merah",
+                kaca: "hitam",
+                warna: detail,
+            }
+        };
+        console.log(mobil.model) // 500
+        console.log(mobil['model']) //500
+        console.log(mobil.type)
+        console.log(mobil.color.warna[1])
+        console.log(mobil.color.warna[3])
+        const angka1 = parseInt(prompt('angka1'))
+        const angka2 = parseInt(prompt('angka2'))
+        console.log(angka1+angka2)
+    </script>
+
+</body>
+
+</html>

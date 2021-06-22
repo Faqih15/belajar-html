@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JADWAL SHOLAT MASJID JAMI</title>
+</head>
+
+<body>
+    <script>
+        const user = ['usamah', 'mujahid', 'setren', 'izul']
+        const events = ['adzan subuh', 'iqomat subuh', 'adzan dluhur', 'iqomat dluhur', 'adzan ashar', 'iqomat ashar']
+        
+        for (let i = 10; i < events.length; i++) {
+
+            console.log(events[i])
+
+        }
+        // setelah dicek
+        // lakukan perintah didalam kurung
+        // tambahan 1 ke i
+
+
+        var jawab = prompt("Jadwal Waktu Sholat Masjid Jami Javascript _ Pilih : SB DH AS MG IS");
+        var jadwal = "";
+        switch (jawab) {
+            case "SB":
+                jadwal = "Adzan : Mbah Izul<br> Qomat : Usamah";
+                break;
+            case "DH":
+                jadwal = "Adzan : Mas Dul<br> Qomat : Jahid";
+                break;
+            case "AS":
+                jadwal = "Adzan : Mbah Tono<br> Qomat : Mbah Izul";
+                break;
+            case "MG":
+                jadwal = "Adzan : Usamah<br> Qomat : Mas Dul";
+                break;
+            case "IS":
+                jadwal = "Adzan : Jahid<br> Qomat : Mbah Tono";
+                break;
+            default:
+        }
+        if (jadwal) {
+            document.write("<h2>Jadwal Sholat<br> " + jadwal + "</h2>");
+        } else {
+            document.write("<p>Opps! anda salah pilih</p>");
+            document.write("<p>Silakan reload halaman dan masukkan kode jadwal Shalat tertera</p>");
+            setTimeout(() => {
+                location.reload()
+            }, 1000);
+        }
+        // if(jawab=="IS"){
+        //     jadwal = "Adzan : Mbah Izul<br> Qomat : Usamah";
+        // }else if(jawab=="DH"){
+        //     jadwal = "Adzan : Mas Dul<br> Qomat : Jahid";
+        // }else{
+        //     document.write("<p>Opps! anda salah pilih</p>");
+        // }
+
+    </script>
+</body>
+
+</html>

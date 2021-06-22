@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar REACTJS PART 2</title>
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+</head>
+
+<style>
+    .header {
+        background-color: rgb(83, 153, 51);
+        color: black;
+        padding: 10px;
+        padding-left: 2mm;
+        padding-top: 2mm;
+        padding-bottom: 2mm;
+        padding-right: 2mm;
+        font-family: 'Times New Roman', Times, serif;
+    }
+</style>
+
+<body>
+    
+    <div id="app"></div>
+    <script type="text/babel">
+       let header = (
+         <header className="header">
+            <h1>Belajar Menggunakan JSX pada React</h1>
+            <p>Tutorial Reactjs untuk Pemula</p>
+         </header>
+       );
+       
+       ReactDOM.render(header, document.getElementById("app"))
+        </script>
+
+</body>
+
+</html>

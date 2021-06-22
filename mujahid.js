@@ -7,6 +7,8 @@
     <script>
         console.log("Saya belajar Javascript");
         document.write("Hello World!");
+
+        {/* aaaaaaaaa */}
     </script>
 </body>
 </html>
